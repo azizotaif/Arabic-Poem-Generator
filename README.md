@@ -25,9 +25,9 @@ Arabic-Poem-Generator/model/
 
 - Run the Flask web app and pass the following arguments
 
-        1. --port : A port number, if no port is given, the default port 5000 will be used
+        1. --port : A port number, the default port is 5000
 
-        2. --device : Inference device (CPU or CUDA)
+        2. --device : Inference device (CPU or CUDA), the default device is CPU
 ``` shell
 python app.py --port 7000 --device "cuda"
 ```
