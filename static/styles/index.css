@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #EEF0F7;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #fff;
+    width: 600px;
+    height: 350px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    line-height: 1.5;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #FF9EC4, #FFD07E);
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.container-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    font-size: 1.7rem;
+    color: #2E4052;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+}
+
+.container-text {
+    padding: 10px 40px 10px 10px;
+    position: center;
+}
+
+.container-text h2 {
+    font-size: 1.2rem;
+    color: #1A2250;
+}
+
+.container-text input,
+.container-text button {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 3px;
+}
+
+.container-text input {
+    border: 2px solid #DADDEC;
+    margin: 5px 0 10px;
+    font-size: 1rem;
+    color: #656880;
+}
+
+.container-text button {
+    background-image: linear-gradient(to right, #89CAFF, #6589FF);
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #89caff94;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container-text button:hover {
+    box-shadow: none;
+}
+
+.container-text h2 {
+    display: block;
+    text-align: center;
+    margin: 20px 0 0;
+    background: -webkit-linear-gradient(left, #FF9EC4, #FFD07E);
+    background: -o-linear-gradient(right, #FF9EC4, #FFD07E);
+    background: -moz-linear-gradient(right, #FF9EC4, #FFD07E);
+    background: linear-gradient(to right, #FF9EC4, #FFD07E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.container-text p {
+    display: block;
+    text-align: center;
+    margin: 20px 0 0;
+    color: #BABDCB;
+    font-size: 14px;
+}
+
+p.poem {
+    font-size: 15px;
+    color: #BABDCB;
+    background: -webkit-linear-gradient(left, #FF9EC4, #FFD07E);
+    background: -o-linear-gradient(right, #FF9EC4, #FFD07E);
+    background: -moz-linear-gradient(right, #FF9EC4, #FFD07E);
+    background: linear-gradient(to right, #FF9EC4, #FFD07E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap;
+}

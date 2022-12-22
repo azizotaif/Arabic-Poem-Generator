@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-text">
+            <h2>Arabic Poem Generator</h2>
+            <p>Write a line of poem bellow to generate the rest</p>
+            <form action="{{url_for('generate')}}" method="post">
+            <input type="text" dir="rtl" name="prompt">
+            <button type="submit">Generate Poem</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
